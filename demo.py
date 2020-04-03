@@ -1,12 +1,13 @@
 import psycopg2 as ps
 
+try:
+    connection = ps.connect("dbname='template1' user='postgres' host='localhost' password='12345678'")
+except:
+    print ("I am unable to connect to the database")
 
 
-
-
-connnection = ps.connect('dbname=weatherdb, user=postgres, password=Kieran')
 cursor = connection.cursor()
-p = cursor.execute('select * from daily_weather')
+p = cursor.execute('select *')
 
 print(p)
 
