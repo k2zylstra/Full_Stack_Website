@@ -6,10 +6,11 @@ except:
     print ("I am unable to connect to the database")
 
 
-cursor = connection.cursor()
-p = cursor.execute('select *')
+#cursor = connection.cursor()
+#p = cursor.execute('select *')
 
-print(p)
 
-cursor.close()
+# print(p)
+
+#cursor.close()
 connection.close()
